@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    border:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Baloo Tammudu 2', cursive;
+    background-color: #ebf2ff;
+}
+
+.button_primary{
+    background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+    color:#fff;
+    border:none;
+    border-radius:6px;
+}
+
+.container{
+    width:100%;
+    margin:0 auto;
+    padding:0 15px;
+}
+
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    background-color:#fff;
+}
+
+.navbar_brand{
+    width:100px;
+}
+
+.navbar_logo{
+    width:100%;
+}
+
+.nav_item{
+    padding:12px;
+    cursor:pointer;
+}
+
+.nav_item:hover {
+    border: 2px solid blue;
+}
+
+.hero_cotainer{
+    width:100%;
+}
+
+.hero_image_container{
+    width:100%;
+
+}
+
+.hero_image{
+    width:100%;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+      justify-content: space-between;
+      padding: 2px 30px;
+    }
+}
+
+@media (min-width: 1020px) {
+    .navbar_brand {
+      width: 150px;
+    }
+    .nav_item {
+      padding: 20px;
+      font-size: 20px;
+    }
+}
