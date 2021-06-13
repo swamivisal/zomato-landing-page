@@ -1,39 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&display=swap" 
-    rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    <!--navbar-->
+  </head>
+  <body>
+    <!-- Navbar -->
     <header>
-        <nav class="navbar">
-            <div class="navbar_brand">
-                <img src="assets/assets_logo.png"  alt="logo" class="navbar_logo">
-            </div>
-            <div class="navbar_nav_items">
-                <button class="nav_item button_primary">Order Food</button>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="navbar__brand">
+          <img src="./assets/assets_logo.png" alt="logo" class="navbar__logo" />
+        </div>
+        <div class="navbar__nav__items">
+          <button class="nav__item button__primary">Order Food</button>
+        </div>
+      </nav>
     </header>
-
     <main class="container">
-        <section class="hero_container">
-             <div class="hero_image_container">
-                 <img  class="hero_image" src="assets/assets_hero.jpg" alt="hero_image"/>
-             </div>
-             <div class="hero_description">
-                <h2 class="hero text">Order food from favourite restaurants near you</h2>
-                <button class="nav_item button_primary">Order now</button>
-            </div>
+      <!-- Hero Section -->
+      <section class="hero__container">
+        <div class="hero__image__container">
+          <img class="hero__image" src="./assets/assets_hero.jpg" alt="hero image" />
+        </div>
+        <div class="hero__description">
+          <h1 class="hero__text">
+            Order food from favourite restaurants near you.
+          </h1>
+          <button class="button__primary">Order now</button>
+        </div>
+      </section>
 
-        </section>
+      <!-- Explore Menu -->
+      <section class="explore__menu__container">
+        <h1 class="explore__menu__text">Explore Our Menu</h1>
+        <div class="explore__menu__gradient__bg"></div>
+        <div class="explore__menu__lists">
+          <!-- Burger -->
+          <div class="food__menu__card">
+            <img src="./assets/assets_burger.jpg" alt="burger" class="food__image" />
+            <div class="food__menu__card__description">
+              <h3 class="food__title">Burgers</h3>
+              <p class="food__restaurants">
+                Burger King, Mcdonalds, Burger Place
+                <span style="color: red"> +3</span>
+              </p>
+            </div>
+          </div>
+          <!-- Pizza -->
+          <div class="food__menu__card" id="pizza__card">
+            <img src="./assets/assets_pizza.jpg" alt="pizza" class="food__image" />
+            <div class="food__menu__card__description">
+              <h3 class="food__title">Pizza</h3>
+              <p class="food__restaurants">
+                Pizza Hut, Domino's Pizza
+                <span style="color: red"> +3</span>
+              </p>
+            </div>
+          </div>
+          <!-- Ice Cream -->
+          <div class="food__menu__card">
+            <img
+              src="./assets/assets_iceCream.jpg"
+              alt="ice cream"
+              class="food__image"
+            />
+            <div class="food__menu__card__description">
+              <h3 class="food__title">Ice Creams</h3>
+              <p class="food__restaurants">
+                Baskin Robins, Ibaco
+                <span style="color: red"> +3</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="explore__menu__view__more">
+          <button class="button__primary">View More</button>
+        </div>
+      </section>
+
+      <!-- Restaurants -->
+      <section class="restaurants__container">
+        <h1 class="restaurants__description">Order From 100s of restaurants</h1>
+        <div class="restaurants__flex">
+          <div class="restaurants__flex__row__one">
+            <div class="restaurant__1">
+              <img
+                class="restaurant__1__image"
+                src="./assets/assets_restaurant1.jpg"
+                alt="restaurant__1"
+              />
+            </div>
+            <div class="restaurant__2">
+              <img
+                class="restaurant__2__image"
+                src="./assets/assets_restaurant2.jpg"
+                alt="restaurant__2"
+              />
+            </div>
+          </div>
+          <div class="restaurants__flex__row__two">
+            <div class="restaurant__3">
+              <img
+                class="restaurant__3__image"
+                src="./assets/assets_restaurant3.jpg"
+                alt="restaurant__3"
+              />
+            </div>
+            <div class="restaurant__4">
+              <img
+                class="restaurant__4__image"
+                src="./assets/assets_restaurant4.jpg"
+                alt="restaurant__4"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--mail_info-->
+    <section class="mail_container">
+        <div class="updated_block">
+            <h1 >Stay Updated</h1>
+        </div>
+        <div class="mail_content">
+            <input class="mail_input" type="email" placeholder="abc@gmail.com">
+            <button class="button__primary update_button">Get Updates</button>
+        </div>
+    </section>
+    <section >
+      <div class="mot_image_block">
+        <img class="mot_image" src="assets/assets_mot_image.jpg"/>
+        <b class="mot_quote">When a man's stomach is full it makes no difference
+          whether he is rich or poor
+        </b>  
+      </div>
+     
+    </section>
+    <section>
+        <footer class="footer button__primary">
+            <div class="footer_zomato">
+              <h1><b>zomato</b></h1>
+            </div>
+            <div class="footer_headings">
+              <p>Pricing</p>
+              <p>Terms and condition</p>
+              <p>Partnership</p>
+              <p>Carrer</p>
+              <p>Contact</p>
+            </div>
+        </footer>   
+    </section>
     </main>
-</body>
+  </body>
 </html>
